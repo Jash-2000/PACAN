@@ -1,0 +1,49 @@
+nohup: ignoring input
+
+================================================================================
+EXPERIMENT 1: HARD BISTABLE WC (P=1.5, Higher Drive)
+================================================================================
+
+Finding attractors...
+Found 50 attractors
+A_p E_mean=0.785, A_h E_mean=0.450
+
+Running PACAN...
+PACAN:   0%|          | 0/3 [00:00<?, ?it/s]PACAN:  33%|███▎      | 1/3 [01:57<03:55, 117.78s/it]PACAN:  67%|██████▋   | 2/3 [03:54<01:57, 117.38s/it]PACAN: 100%|██████████| 3/3 [05:51<00:00, 116.95s/it]PACAN: 100%|██████████| 3/3 [05:51<00:00, 117.11s/it]
+
+Running Greedy...
+
+Running Random...
+
+RESULTS:
+  PACAN:  P_succ=0.000
+  Greedy: P_succ=0.000
+  Random: P_succ=0.000
+  ΔP (PACAN-Greedy): +0.000
+
+================================================================================
+EXPERIMENT 2: NEAR-CHAOTIC WC (σ=0.25)
+================================================================================
+
+Finding attractors (statistical)...
+Found 50 statistical attractors
+A_p E_mean=0.687, A_h E_mean=0.388
+
+Running PACAN...
+PACAN:   0%|          | 0/3 [00:00<?, ?it/s]PACAN:  33%|███▎      | 1/3 [01:57<03:54, 117.10s/it]PACAN:  67%|██████▋   | 2/3 [03:53<01:56, 116.98s/it]PACAN: 100%|██████████| 3/3 [05:51<00:00, 117.20s/it]PACAN: 100%|██████████| 3/3 [05:51<00:00, 117.15s/it]
+
+Running Greedy...
+
+Running Random...
+
+RESULTS:
+  PACAN:  P_succ=0.000
+  Greedy: P_succ=0.000
+Traceback (most recent call last):
+  File "/home/jash/Desktop/PACAN_Experiments/pacan_week9.py", line 692, in <module>
+    main()
+  File "/home/jash/Desktop/PACAN_Experiments/pacan_week9.py", line 677, in main
+    run_chaotic_experiment(N=args.N, save_dir=args.save_dir)
+  File "/home/jash/Desktop/PACAN_Experiments/pacan_week9.py", line 458, in run_chaotic_experiment
+    print(f"  Random: P_succ={random_result['p_succ']:.3f}")
+TypeError: 'NoneType' object is not subscriptable
